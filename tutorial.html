@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutoril GitHub</title>
+</head>
+<body>
+    <h1>Passo a Passo de instalação e configuração do git no windows</h1>
+    <h2>Por Maria Eduarda Ribeiro Alves</h2>
+    <h3>1.Instalação do git no windows</h3>
+       <p>Há duas formas de instalar o git; Pelo terminal e pelo site oficial. 
+        O mais recomendado é pelo site oficial do git:</p>
+        <p>Link do git: <a href="https://git-scm.com/downloads">Downloads do Git</a> </p>
+       
+        <p>Ao entrar no link abrirá a pagina inicial do git </p>
+        <img src="C:\Users\artde\OneDrive\Imagens\Capturas de tela\paginicial.png" alt="Pagina inicial:
+        " width="500">
+
+        <p>Escolha a opção de instalar de acordo com o seu windows, em seguida pode abrir 
+        o programa normalmente.
+        </p>
+
+
+        <h3>2.Configuração pelo Git Bash</h3>
+        <p>Criado a pasta que você subir para o git, abrá esse arquivo usando o atalho do git bash 
+        clicando no lado direito do mouse e escolhende a opção "git bash". Com o terminal ja aberto
+        você irá usar os comandos de configuração global.</p>
+        <img src="C:\Users\artde\OneDrive\Imagens\Capturas de tela\Captura de tela 2025-05-29 205001.png" 
+        alt="Atalho" width="400"> 
+        <img src="C:\Users\artde\OneDrive\Imagens\Capturas de tela\Captura de tela 2025-05-29 205047.png" alt="Terminal"
+        width="400">
+        <p><strong>Comando:</strong></p>
+        <p><strong>git config --global user.nome "seu usuário do git"</strong></p>
+        <p><strong>git config --global user.email "seu email"</strong></p>
+        <p>Esse comando faz com que todas as configurção sejam aplicadas, globalmente, 
+        em todos os respositórios desse usário "user.name"</p>
+
+        <h3>3.Iniciar e Adicionar</h3>
+          <p>Depois de ser configurado o git você irá iniciar com o comando:<strong>git init</strong>
+        no terminal do bash</p>
+            <img src="C:\Users\artde\OneDrive\Imagens\Capturas de tela\copiagitinit.png" alt="init"
+        width="500">
+          <p>Ele cria um repositorio dentro do seu direito e cria uma pasta oculta ".git" no seu projeto</p>
+          <p>Após esse comando ter rodado com sucesso, você ira adicionar o seu documento com o comando
+          <strong>git add "nome do seu documento"</strong></p>
+            <img src="c:\Users\artde\OneDrive\Imagens\Capturas de tela\gitadd.png" alt="git add" width="500">
+          <p>Esse comando prepara o arquivo para sofrer alterações na área de preparação</p>
+          <p>Depois de adicionar o arquivo, será hora de colocar o seu commit ele salvará  alterações
+        no histórico do repositório. Use o comando <strong>git commit -m "escolha um nome"</strong>
+            <p><img src="c:\Users\artde\OneDrive\Imagens\Capturas de tela\commit.png" alt="commit"
+            width="500"></p>
+        e logo após você irá adicionar o link do seu repositório, usando o comando
+        <strong>git remote add origin "link do repositório"</strong></p>
+            <p> <img src="c:\Users\artde\OneDrive\Imagens\Capturas de tela\gitremote.png" width="500"> </p>
+
+        <h3>4.Git Branch</h3>
+         <p>Uma branch  é uma linha independente de desenvolvimento.
+           Permite trabalhar em novas funcionalidades ou corrigir bugs sem afetar o código principal 
+            ( main ou master). Na hora da configuração você terá que mudar seu branch de master para 
+             main. use o coódigo <strong>git branch -m master main</strong>. para verificar se mudou
+             é so usar o comando <strong>git branch</strong></p>
+             <img src="c:\Users\artde\OneDrive\Imagens\Capturas de tela\branch.png" alt="branchh"
+             width="500">
+
+        <h3>5.Enviar o arquivo para github</h3>
+          <p>Hora de subir esse arquivo para o github de vez! usando o comando
+            <strong> git push -u origin main</strong> o arquivo irá direto para o git. Mas, antes de dar esse
+             comando terá que terminar a configuração usando o token do seu repositório!</p>
+          <h4>5.1 Token de repositório</h4>
+          <p>Para pegar o token você deve entar no github e acessar sua conta. depois de acessar sua conta
+            você irá para o perfil e configurações.
+          </p>
+          <img src="c:\Users\artde\OneDrive\Imagens\Capturas de tela\config.png" width="200">
+          <p>irá descer ate o final onde terá a opção "configuração do desevolvedor"</p>
+          <img src="c:\Users\artde\OneDrive\Imagens\Capturas de tela\Captura de tela 2025-05-29 222402.png"
+          width="400">
+          <p>Irá escolher fichas ou token classico</p>
+          <img src="c:\Users\artde\OneDrive\Imagens\Capturas de tela\Captura de tela 2025-05-29 222654.png"
+          width="400">
+          <p>irá gerar um token classico, colocar um nome para ele e marcar a opção de repo e depois irá copiar
+            o link
+          </p>
+
+           <img src="c:\Users\artde\OneDrive\Imagens\Capturas de tela\Captura de tela 2025-05-29 222956.png"
+           width="400">
+
+        <h4>Subir para o github</h4>
+        <p>Depois do token ser criado, você usar o comando <strong>git push -u origin main</strong>
+        ele  serve para enviar as alterações feitas localmente no repositório para um repositório remoto </p>
+         <img src="c:\Users\artde\OneDrive\Imagens\Capturas de tela\push.png" width="400">
+        <p>Quando esse comando rodar, você será levado para uma página onde tera que colocar seu username
+            e o link que vc copiou do seu Token </p>
+            <p>Coloque o nome do token que você criou</p>
+            <img src="c:\Users\artde\OneDrive\Imagens\Capturas de tela\Captura de tela 2025-05-26 172735.png"
+            width="400">
+            <p>Coloque seu user name</p>
+            <img src="c:\Users\artde\OneDrive\Imagens\Capturas de tela\Captura de tela 2025-05-26 173545.png"
+             width="400">
+            <p>Coloque o link do seu token</p>
+            <img src="c:\Users\artde\OneDrive\Imagens\Capturas de tela\Captura de tela 2025-05-26 173613.png"
+             width="400">
+            <p>Depois dê o comonando <strong>git push -u origin main</strong> e entre no seu respositório 
+            no github, Prontinho! seu arquivo foi enviado para seu repositório</p>
+            <img src="c:\Users\artde\OneDrive\Imagens\Capturas de tela\Captura de tela 2025-05-29 224320.png" 
+            width="400">
+
+        <h3>6.Possível erro ao usar o git push</h3>
+        <p>Mesmo depois de colocar o link do token, ainda sim pode ocorre um erro! mais comum q seja esse:</p>
+        <img src="c:\Users\artde\OneDrive\Imagens\Capturas de tela\errou.png" width="500">
+        <p>Caso tenha acontecido não se desespere! apenas um comando pode ajudar!
+        Pode apenas ser que usa url nãp tenha sido aceita ou seja vc precisa permetir, basta usar o 
+        comando <strong>git config --global credential.helper store</strong> e apos dar "enter", dê, novamente,
+        <strong>git push -u origin main</strong></p>
+        <img src="c:\Users\artde\OneDrive\Imagens\Capturas de tela\acerto.png" width="400">
+        <p>Pronto! isso quer dizer que arquivo ja esta no seu repositório!</p>
+
+</body>
+</html>
