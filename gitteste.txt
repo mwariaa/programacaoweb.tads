@@ -1,0 +1,32 @@
+versão 1.
+
+Passo á Passo para subir um arquivo pro GitHub
+
+Passo 1 :  abra o dirétoio no terminal do computador usando o comando;
+ 
+  cd Documentos/Aula01/gitteste.tx
+
+passo 2: para inicializar a repositório é usado o comando;
+  
+  git init
+
+passo 3: adicione esse arquivo usando o comando;
+
+  git add gitteste.tx
+
+passo 4: dê comando de commit 
+ 
+  git commit -m "Adicionando um commit"
+
+passo 5: adicionar repositório remoto
+ 
+  git remote add origin (link do seu repositório)
+para conseguir o link do seu repositório basta; clicar na bola do seu perfil -em seguida ir em    "Seus Repositórios" clicar no repositório - e em seguida no "<Code>", e depois copiar o link.
+
+passo 6: puxe para github usando o comando 
+ 
+ git push -u origin master
+          ou 
+ git push -u origin main 
+ 
+ 
