@@ -1,0 +1,221 @@
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #c2c7c4;
+    color: #2f493e;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+ 
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 16px;
+  }
+
+ 
+  header {
+    background-color: #86a08e;
+    color: white;
+    padding: 22px 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-weight: 700;
+    font-size: 2rem;
+    font-style: italic;
+  }
+
+  header img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+  }
+
+
+  form {
+    background-color: #c2c7c4;
+    border: 2px solid #2f493e;
+    border-radius: 8px 8px 12px 12px;
+    max-width: 360px;
+    width: 100%;
+    box-shadow: 0 0 10px rgb(47 73 62 / 0.15);
+  }
+
+  form header {
+    background-color: #86a08e;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 6px 6px 0 0;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+ 
+  .input-group {
+    padding: 14px 18px;
+  }
+
+
+  input[type="text"], input[type="number"] {
+    width: 100%;
+    background-color: #7d8e81;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 16px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: background-color 0.3s ease;
+  }
+  input[type="text"]::placeholder,
+  input[type="number"]::placeholder {
+    color: #d5dcd8;
+    font-style: italic;
+  }
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    outline: 2px solid #2f493e;
+    background-color: #92a498;
+  }
+
+  
+  button {
+    background-color: #86a08e;
+    color: white;
+    border: none;
+    margin: 12px auto 16px auto;
+    display: block;
+    font-style: italic;
+    font-weight: 600;
+    padding: 6px 40px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 1rem;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  button:hover,
+  button:focus {
+    background-color: #719071;
+    outline: none;
+  }
+
+
+  nav.footer-nav {
+    margin: 24px 0 0 0;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+  nav.footer-nav a {
+    color: #2f493e;
+    text-decoration: none;
+    margin: 0 8px;
+    user-select: none;
+  }
+  nav.footer-nav a:hover,
+  nav.footer-nav a:focus {
+    text-decoration: underline;
+    outline: none;
+  }
+
+  
+  footer {
+    background-color: #86a08e;
+    color: #1f3626;
+    text-align: center;
+    padding: 18px 1rem 24px 1rem;
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  footer .social-links {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  footer .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: background-color 0.3s ease;
+  }
+  footer .social-links a.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  }
+  footer .social-links a.x {
+    background-color: black;
+  }
+  footer .social-links a:hover,
+  footer .social-links a:focus {
+    filter: brightness(85%);
+    outline: none;
+  }
+
+
+  @media (max-width: 767px) {
+    header {
+      font-size: 1.5rem;
+      padding: 16px 1rem;
+      gap: 8px;
+    }
+    form {
+      max-width: 100%;
+      box-shadow: none;
+      border-radius: 8px;
+      border-width: 1.5px;
+    }
+    button {
+      padding: 8px 30px;
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1439px) {
+    main {
+      padding: 40px 32px;
+    }
+    form {
+      max-width: 360px;
+    }
+    header {
+      font-size: 2.5rem;
+      padding: 22px 2rem;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    main {
+      padding: 60px 32px;
+    }
+    form {
+      max-width: 440px;
+    }
+    header {
+      font-size: 3rem;
+      padding: 24px 4rem;
+    }
+  }

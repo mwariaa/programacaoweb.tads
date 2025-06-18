@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MYSABOOKS - Cadastro de Livros</title>
+<link rel="stylesheet" href="login.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@1,400;1,600;1,700&display=swap" rel="stylesheet" />
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+<header>
+  <span>MYSABOOKS</span>
+  <img src="C:\Users\Aluno\Downloads\Pixel_Art-removebg-preview.png"  width="500" />
+</header>
+
+<main>
+  <form aria-label="Cadastro de livros">
+    <header>CADASTRO DE LIVROS</header>
+    <div class="input-group">
+      <input type="text" name="titulo" placeholder="Título:" aria-label="Título do livro" required />
+    </div>
+    <div class="input-group">
+      <input type="text" name="ibsn" placeholder="Ibsn:" aria-label="Número ISBN do livro" required />
+    </div>
+    <div class="input-group">
+      <input type="text" name="autor" placeholder="Autor:" aria-label="Nome do autor" required />
+    </div>
+    <div class="input-group">
+      <input type="number" name="ano" placeholder="Ano de Publicação:" aria-label="Ano de publicação do livro" min="0" max="2100" required />
+    </div>
+    <div class="input-group">
+      <input type="text" name="editora" placeholder="Editora:" aria-label="Editora do livro" required />
+    </div>
+    <button type="submit" aria-label="Cadastrar livro">CADASTRAR</button>
+  </form>
+</main>
+
+<nav class="footer-nav" aria-label="Navegação do site">
+  <a href="#" tabindex="0">Sobre</a> | 
+  <a href="#" tabindex="0">Aviso Legal</a> | 
+  <a href="#" tabindex="0">Termos de Uso</a> | 
+  <a href="#" tabindex="0">Fale Conosco</a>
+</nav>
+
+<footer>
+  <p>Redes sociais da empresa:</p>
+  <div class="social-links" role="list">
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" rel="noopener" class="instagram" role="listitem">
+      <img src="C:\Users\Aluno\Downloads\insta-removebg-preview.png" alt="Ícone Instagram" style="width:24px;height:24px;"/>
+    </a>
+    <a href="https://twitter.com" target="_blank" aria-label="X (Twitter)" rel="noopener" class="x" role="listitem">
+      <img src="https://i0.statig.com.br/bancodeimagens/1x/gu/f4/1xguf4f3ji405nox8eudlk33r.jpg" alt="Ícone X (Twitter)" style="width:24px;height:24px;"/>
+    </a>
+  </div>
+</footer>
+</body>
+</html>
